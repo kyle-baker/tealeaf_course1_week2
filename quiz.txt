@@ -1,0 +1,39 @@
+1) Name what each of the below is
+
+a = 1 
+# local variable, Fixnum object value of 1
+
+@a = 2 
+# instance variable, Fixnum object value 2
+
+user = User.new 
+# instantiating a new object in the User class and assigning to variable user
+
+user.name 
+#calling the getter method for the '@name' instance variable of the user class
+
+2) 
+  module ExampleModule
+  end
+
+  class ExampleClass
+    include ExampleModule
+   end
+
+3) Class variables begin with two @@ symbols, shared among the class and all of its descendants. Instnace variable is not shared by class descendants, and begins with one @ symbol.
+
+4) attr_accessor creates a getter and setter method for an instance variable
+
+5) calling the 'some_method' method from the Dog class
+
+6) Subclassing - One class inherits from another. Dog subclass will inherit all behaviors of Animal superclass. (is-a)
+   Mixing - When certain behaviors are shared among classes, but not every single one of them. Multiple inheritances.   (has-a)
+
+7. def initialize(name)
+    @name = name
+    end
+
+8. Yes
+
+9. Debugging. Can use rubygem pry, and insert a binding.pry line of code to stop a program from executing on a certain line. From there,
+can test various variables and methods to help locate error.
